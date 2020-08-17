@@ -1,0 +1,56 @@
+:root {
+  --white: #F1F0EA;
+  --purple-light: #534B52;
+  --bone: #E0DDCF;
+  --purple-dark: #2D232E;
+  --brown: #474448;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+header {
+  background: var(--purple-dark);
+  color: var(--bone);
+  text-align: center;
+}
+
+main {
+  background: var(--white);
+  min-height: 90vh;
+}
+
+.controls {
+  text-align: center;
+  padding: 0.5em 0;
+  background: var(--purple-light);
+}
+
+#button, #select{
+  background: var(--purple-light);
+  border: 2px solid var(--bone);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--bone);
+}
+
+video {
+  height: 85vh;
+  display: block;
+  margin: 0 auto;
+}
